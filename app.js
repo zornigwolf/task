@@ -3,6 +3,7 @@ const taskList=document.getElementById("task-list");
 const containerForButtons=document.getElementById("btn")
 var a = 1;
 
+
 //counter variable to track the task index
 //test
 let taskIndex = 1;
@@ -38,10 +39,9 @@ taskForm.addEventListener("submit", function(event){
         //taskBat.className = 'Del';
         taskBat.innerText = 'Del';
         taskBtn.appendChild(taskBat);
-        
-        taskItem.addEventListener("click", function(){
-            console.log("complited");
-            this.classList.toggle("complited");
+
+        taskBat.addEventListener("click", function(event){
+            event.currentTarget.parentNode.remove();
         })
 
         //Increment the task index
@@ -51,8 +51,5 @@ taskForm.addEventListener("submit", function(event){
         
     }
     
-})
-taskForm.addEventListener("btn", function (e){
-    a.preventDefault();
-
+    
 })
