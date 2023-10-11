@@ -81,10 +81,6 @@ input {
     align-items: center;
     animation: animateIn 0.3s ease;
 }
-.bgr {
-    /*display: inline-flex;*/
-    flex-direction: row;
-}
 .btn:hover {
         border-color: rgb(255, 51, 0);
         background-color: rgb(255, 0, 0);
